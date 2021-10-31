@@ -1,0 +1,51 @@
+body{
+    font-family: cursive;
+    background-image: body;
+    background-image: url("byTwilight.jpg");
+    background-repeat: no-repeat;
+    background-color: grey;
+    background-size: cover;
+    margin:0;
+    color: white;
+}
+nav ul {
+    list-style-type: none;
+    padding: 10px 10px;
+    background-color: #111;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+nav li a:hover {
+    background-color: #333;
+}
+nav li {
+    border-left: 1px solid #bbb;
+}
+nav li:first-child {
+    border-left: none;
+}
+section ul{
+    list-style-type: none;
+    margin-block-start: 0;
+    padding: 0;
+
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4em 4em 4em 4em 4em 4em 4em 4em 4em 4em 4em 4em ;
+}
+fieldset{
+    grid-column: 3/9;
+    grid-row: 3/10;
+    background-color:gray;
+    text-align: center;
+}

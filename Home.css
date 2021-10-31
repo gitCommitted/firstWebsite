@@ -28,6 +28,7 @@ ul {
     display: flex;
     justify-content: center;
     margin: 0;
+    overflow: hidden;
 }
 li a {
     color: white;
@@ -53,7 +54,5 @@ article{
       padding: 10px 10px;
       background-color: rgb(64, 165, 224);
       box-shadow: 5px 5px 2px #333;
-}
-nav#bottom ul li a{
-    padding:0;
+      color: white;
 }

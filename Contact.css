@@ -1,0 +1,150 @@
+body{
+    font-family: cursive;
+    background-image: body;
+    background-image: url("byTwilight.jpg");
+    background-repeat: no-repeat;
+    background-color: grey;
+    background-size: cover;
+    margin:0;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    padding: 10px 10px;
+    background-color: #111;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+li a:hover {
+    background-color: #333;
+}
+li {
+    border-left: 1px solid #bbb;
+}
+li:first-child {
+    border-left: none;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4em 4em 4em 4em 4em 4em 4em 4em 4em 4em 4em 4em ;
+}
+fieldset{
+    grid-column: 3/9;
+    grid-row: 3/10;
+    background-color:gray;
+
+}
+legend{
+    grid-column: 3/5;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    font-size: 30px;
+    background-color: gray;
+
+}
+.first{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    grid-template-rows: auto ;
+    row-gap: .6em;
+    padding-bottom: 0em;
+
+    grid-auto-flow: row;
+
+}
+.first span{
+    grid-column: 3/4;
+}
+.first label{
+    grid-column: 3/4;
+    text-align: center;
+}
+.first input{
+    grid-column: 3/4;
+
+}
+
+.double{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: .6em;
+
+}
+.double .phone_number{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.double #phone_number{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.double .email_address{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.double #email_address{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.triple{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+}
+.triple #phone{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.triple .phone{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.triple #email{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.triple .email{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.triple #Text{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.triple .Text{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+p {
+    grid-column: 3/4;
+    text-align: center;
+    margin: 0pt;
+}
+.button{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+.button button {
+    grid-column: 2/3;
+}
+textarea{
+    grid-column: 3/4;
+}

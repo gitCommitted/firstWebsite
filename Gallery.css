@@ -1,0 +1,41 @@
+body{
+    font-family: cursive;
+    background-color: grey;
+    background-size: cover;
+    margin:0;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    padding: 10px 10px;
+    background-color: #111;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+li a:hover {
+    background-color: #333;
+}
+li {
+    border-left: 1px solid #bbb;
+}
+li:first-child {
+    border-left: none;
+}
+.grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin: 30px;
+    text-align: center;
+}
